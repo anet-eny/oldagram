@@ -27,3 +27,17 @@ const posts = [
         likes: 152
     }
 ]
+
+const postSectionEl = document.getElementById("post-section")
+
+for (let i = 0; i < posts.length; i++) {
+    let postContent = posts[i]
+    let post = document.createElement("article")
+
+    post.innerHTML = `
+        <img class="avatar-img" src="${postContent.avatar}" alt="Post avatar">
+    `
+
+    postSectionEl.append(post)
+
+}
