@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* layout */
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* images */
+.logo {
+    width: 127px;
+}
+
+.user-avatar {
+    width: 50px;
+    border-radius: 180px;
+}
