@@ -35,7 +35,7 @@ for (let i = 0; i < posts.length; i++) {
     let post = document.createElement("article")
 
     post.innerHTML = `
-        <img class="avatar" id="post-avatar" src="${postContent.avatar}" alt="Post avatar">
+        <img class="avatar post-avatar" src="${postContent.avatar}" alt="Post avatar">
         <p class="bold-text post-text">${postContent.name}</p>
         <p class="post-text">${postContent.location}</p>
         <img class="post-picture" src="${postContent.post}" alt="Picture of the artist">
