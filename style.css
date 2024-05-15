@@ -2,6 +2,16 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+}
+
+/* typography */
+.bold-text {
+    font-weight: bold;
+}
+
+.post-text {
+    margin: 0;
 }
 
 /* layout */
@@ -26,8 +36,15 @@ header {
 .avatar {
     width: 50px;
     border-radius: 180px;
+    margin: 10px;
 }
 
 .post-picture {
     width: 375px;
+}
+
+.icon {
+    width: 35px;
+    padding: 5px;
+    margin-top: 10px;
 }

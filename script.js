@@ -35,9 +35,9 @@ for (let i = 0; i < posts.length; i++) {
     let post = document.createElement("article")
 
     post.innerHTML = `
-        <img class="avatar" src="${postContent.avatar}" alt="Post avatar">
-        <p class="bold-text">${postContent.name}</p>
-        <p class="text">${postContent.location}</p>
+        <img class="avatar" id="post-avatar" src="${postContent.avatar}" alt="Post avatar">
+        <p class="bold-text post-text">${postContent.name}</p>
+        <p class="post-text">${postContent.location}</p>
         <img class="post-picture" src="${postContent.post}" alt="Picture of the artist">
         <div class="icon-container">
             <img class="icon" src="images/icon-heart.png" alt="Like icon">
@@ -45,7 +45,7 @@ for (let i = 0; i < posts.length; i++) {
             <img class="icon" src="images/icon-dm.png" alt="Dm icon">
         </div>
         <p class="bold-text">${postContent.likes} likes</p>
-        <p class="text"><span class="bold-text">${postContent.username}</span>${postContent.comment}</p>
+        <p class="text"><span class="bold-text">${postContent.username}</span> ${postContent.comment}</p>
     `
 
     postSectionEl.append(post)
