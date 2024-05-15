@@ -22,7 +22,11 @@ header {
     width: 127px;
 }
 
-.user-avatar {
+.avatar {
     width: 50px;
     border-radius: 180px;
+}
+
+.post-picture {
+    width: 375px;
 }
