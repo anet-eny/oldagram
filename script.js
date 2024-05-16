@@ -38,7 +38,7 @@ for (let i = 0; i < posts.length; i++) {
         <img class="avatar post-avatar" src="${postContent.avatar}" alt="Post avatar">
         <p class="bold-text post-text">${postContent.name}</p>
         <p class="post-text">${postContent.location}</p>
-        <img class="post-img" id="like-img" src="${postContent.post}" alt="Picture of the artist">
+        <img class="post-img" id="like-img${i}" src="${postContent.post}" alt="Picture of the artist">
         <div class="icon-container">
             <img class="icon" id="like-icon${i}" src="images/icon-heart.png" alt="Like icon">
             <img class="icon" src="images/icon-comment.png" alt="Comment icon">
@@ -54,14 +54,19 @@ for (let i = 0; i < posts.length; i++) {
 
 for (let i = 0; i < posts.length; i++) {
     const likeIconEl = document.getElementById(`like-icon${i}`)
-    const likeImgEl = document.getElementById()
+    const likeImgEl = document.getElementById(`like-img${i}`)
     const likesEl = document.getElementById(`likes${i}`)
 
     let likesID = posts[i]
     let likesCount = likesID.likes
 
     likeIconEl.addEventListener("click", function() {
-        // console.log("clicked")
+        likesCount += 1
+        posts[i].likes = likesCount
+        likesEl.innerHTML = `${posts[i].likes} likes`
+    })
+
+    likeImgEl.addEventListener("dblclick", function() {
         likesCount += 1
         posts[i].likes = likesCount
         likesEl.innerHTML = `${posts[i].likes} likes`
