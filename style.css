@@ -36,6 +36,18 @@ article {
     background-color: white;
 }
 
+.icon-container {
+    margin-left: 10px;
+}
+
+.likes-comment-container {
+    padding: 0 0 15px 15px; 
+}
+
+.likes {
+    margin-bottom: 10px;
+}
+
 
 /* images */
 .logo {
