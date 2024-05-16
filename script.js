@@ -45,7 +45,7 @@ for (let i = 0; i < posts.length; i++) {
             <img class="icon" src="images/icon-dm.png" alt="Dm icon">
         </div>
         <div class="likes-comment-container">
-            <p class="bold-text post-text" id="likes${i}">${postContent.likes} likes</p>
+            <p class="bold-text post-text likes" id="likes${i}">${postContent.likes} likes</p>
             <p class="post-text"><span class="bold-text">${postContent.username}</span> ${postContent.comment}</p>
         </div>
     `
